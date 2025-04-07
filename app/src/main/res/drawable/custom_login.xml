@@ -5,15 +5,9 @@
     <size
         android:width="100dp"
         android:height="50dp"/>
-    <gradient
-        android:startColor="#5AFF5B"
-        android:endColor="#37B6F2"/>
+    <solid
+        android:color="#FF9800"/>
     <corners
         android:radius="30dp"/>
-
-<!--    Độ cong của góc-->
-    <stroke
-        android:color="@color/purple_200"
-        android:width="1dp"/>
 
 </shape>
