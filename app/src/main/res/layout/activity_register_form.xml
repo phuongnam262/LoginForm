@@ -11,6 +11,7 @@
         android:id="@+id/textCreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="32dp"
         android:text="Create Account "
         android:textColor="#000000"
@@ -31,7 +32,7 @@
         android:fontFamily="sans-serif"
         android:hint="Name"
         android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
+        android:paddingLeft="15dp"
         android:paddingBottom="4dp"
         android:textColorHint="#767474"
         android:textSize="16sp"
@@ -42,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textCreate" />
 
     <View
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="1dp"
         android:layout_marginTop="2dp"
         android:background="#A0A0A0"
@@ -60,7 +61,7 @@
         android:fontFamily="sans-serif"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
+        android:paddingLeft="15dp"
         android:paddingBottom="4dp"
         android:textColorHint="#767474"
         android:textSize="16sp"
@@ -71,26 +72,26 @@
         app:layout_constraintTop_toBottomOf="@+id/textName" />
 
     <View
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="1dp"
+        android:layout_marginTop="2dp"
         android:background="#A0A0A0"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="2dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
 
     <EditText
         android:id="@+id/textPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="40dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="sans-serif"
         android:hint="password"
         android:inputType="textPassword"
-        android:paddingLeft="10dp"
+        android:paddingLeft="15dp"
         android:paddingBottom="4dp"
         android:textColorHint="#767474"
         android:textSize="16sp"
@@ -101,26 +102,26 @@
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
     <View
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="1dp"
+        android:layout_marginTop="2dp"
         android:background="#A0A0A0"
-        app:layout_constraintTop_toBottomOf="@+id/textPass"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="2dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPass" />
 
 
     <EditText
         android:id="@+id/textConfirmPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="40dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="sans-serif"
         android:hint="confirm password"
         android:inputType="textPassword"
-        android:paddingLeft="10dp"
+        android:paddingLeft="15dp"
         android:paddingBottom="4dp"
         android:textColorHint="#767474"
         android:textSize="16sp"
@@ -131,43 +132,46 @@
         app:layout_constraintTop_toBottomOf="@+id/textPass" />
 
     <View
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="1dp"
+        android:layout_marginTop="2dp"
         android:background="#A0A0A0"
-        app:layout_constraintTop_toBottomOf="@+id/textConfirmPass"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="2dp"/>
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConfirmPass" />
 
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="300dp"
+        android:layout_width="380dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="192dp"
-        android:background="@drawable/custom_signup"
-        android:text="Sign UP"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_login_signup"
+        android:text="Sign up"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
         app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textConfirmPass"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/textConfirmPass" />
 
     <LinearLayout
         android:id="@+id/btnGoogle"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="48dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/customgoogleandface"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFacebook">
+        app:layout_constraintTop_toBottomOf="@+id/button2">
 
         <TextView
             android:layout_width="0dp"
@@ -176,7 +180,9 @@
             android:fontFamily="sans-serif-medium"
             android:text="Log in with Google"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textAlignment="center" />
 
         <ImageView
             android:layout_width="24dp"
@@ -187,18 +193,18 @@
 
     <LinearLayout
         android:id="@+id/btnFacebook"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="48dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/customgoogleandface"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2">
+        app:layout_constraintTop_toBottomOf="@+id/btnGoogle">
 
         <TextView
             android:layout_width="0dp"
@@ -207,7 +213,9 @@
             android:fontFamily="sans-serif-medium"
             android:text="Log in with Facebook"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textAlignment="center"/>
 
         <ImageView
             android:layout_width="24dp"
@@ -232,7 +240,9 @@
             android:layout_height="match_parent"
             android:text="Already a member? "
             android:textColor="#000000"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/tvJoinNow"
