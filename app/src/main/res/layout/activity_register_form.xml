@@ -252,7 +252,11 @@
             android:text="Sign in"
             android:textColor="#4285F4"
             android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:tooltipText="Click to join now"
+            android:foreground="?attr/selectableItemBackground"/>
     </LinearLayout>
 
 
