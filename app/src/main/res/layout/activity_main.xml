@@ -24,7 +24,7 @@
     <EditText
         android:id="@+id/textEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="72dp"
         android:background="@android:color/transparent"
         android:ems="10"
@@ -41,20 +41,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textLogin" />
 
+
     <View
         android:layout_width="380dp"
         android:layout_height="1dp"
-        android:layout_marginTop="2dp"
         android:background="#A0A0A0"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
-
 
     <EditText
         android:id="@+id/textPass"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="60dp"
         android:background="@android:color/transparent"
         android:ems="10"
@@ -75,7 +75,6 @@
         android:id="@+id/view"
         android:layout_width="380dp"
         android:layout_height="1dp"
-        android:layout_marginTop="2dp"
         android:background="#A0A0A0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-medium"
         android:paddingTop="4dp"
         android:text="Forgot password?"
@@ -102,13 +101,13 @@
         android:id="@+id/button"
         android:layout_width="380dp"
         android:layout_height="50dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/custom_login_signup"
         android:text="Log in"
+        android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textAllCaps="false"
         app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
