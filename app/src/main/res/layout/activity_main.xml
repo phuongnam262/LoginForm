@@ -187,6 +187,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -204,15 +205,15 @@
             android:id="@+id/tvJoinNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
             android:onClick="onJoinNowClick"
             android:text="Join Now"
             android:textColor="#4285F4"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:clickable="true"
-            android:focusable="true"
-            android:tooltipText="Click to join now"
-            android:foreground="?attr/selectableItemBackground" />
+            android:tooltipText="Click to join now" />
     </LinearLayout>
 
 
