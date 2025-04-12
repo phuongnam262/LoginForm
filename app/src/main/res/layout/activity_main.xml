@@ -55,7 +55,7 @@
         android:id="@+id/textPass"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="sans-serif"
@@ -98,7 +98,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textPass" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLogIn"
         android:layout_width="380dp"
         android:layout_height="50dp"
         android:layout_marginTop="90dp"
@@ -119,6 +119,7 @@
         android:id="@+id/btnGoogle"
         android:layout_width="380dp"
         android:layout_height="48dp"
+        android:layout_alignEnd="@id/btnLogIn"
         android:layout_marginTop="90dp"
         android:background="@drawable/customgoogleandface"
         android:gravity="center_vertical"
@@ -128,18 +129,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button">
+        app:layout_constraintTop_toBottomOf="@+id/btnLogIn">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
-            android:text="Log in with Google"
-            android:textColor="#000000"
-            android:textSize="16sp"
             android:gravity="center"
-            android:textAlignment="center"/>
+            android:text="Log in with Google"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
         <ImageView
             android:layout_width="24dp"
@@ -155,6 +156,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/customgoogleandface"
         android:gravity="center_vertical"
+        android:layout_alignEnd="@id/btnLogIn"
         android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
