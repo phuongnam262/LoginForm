@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="32dp"
-        android:text="Create Account "
+        android:text="@string/create_account"
         android:textColor="#000000"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -25,12 +25,12 @@
     <EditText
         android:id="@+id/textName"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/size_height48dp"
         android:layout_marginTop="50dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="sans-serif"
-        android:hint="Name"
+        android:hint="@string/name"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:paddingBottom="4dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textCreate" />
 
     <View
-        android:layout_width="380dp"
+        android:layout_width="@dimen/size_width380dp"
         android:layout_height="1dp"
         android:background="#A0A0A0"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,12 +53,12 @@
     <EditText
         android:id="@+id/textEmail"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/size_height48dp"
         android:layout_marginTop="35dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="sans-serif"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:paddingBottom="4dp"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textName" />
 
     <View
-        android:layout_width="380dp"
+        android:layout_width="@dimen/size_width380dp"
         android:layout_height="1dp"
         android:background="#A0A0A0"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,12 +82,12 @@
     <EditText
         android:id="@+id/textPass"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/size_height48dp"
         android:layout_marginTop="35dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="sans-serif"
-        android:hint="password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:paddingBottom="4dp"
@@ -100,7 +100,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
     <View
-        android:layout_width="380dp"
+        android:layout_width="@dimen/size_width380dp"
         android:layout_height="1dp"
         android:background="#A0A0A0"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,12 +111,12 @@
     <EditText
         android:id="@+id/textConfirmPass"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/size_height48dp"
         android:layout_marginTop="35dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="sans-serif"
-        android:hint="confirm password"
+        android:hint="@string/confirm_password"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:paddingBottom="4dp"
@@ -129,7 +129,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textPass" />
 
     <View
-        android:layout_width="380dp"
+        android:layout_width="@dimen/size_width380dp"
         android:layout_height="1dp"
         android:background="#A0A0A0"
         app:layout_constraintEnd_toEndOf="parent"
@@ -139,11 +139,11 @@
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/size_width380dp"
+        android:layout_height="@dimen/size_height48dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/custom_login_signup"
-        android:text="Sign up"
+        android:text="@string/sign_up"
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -156,9 +156,9 @@
 
     <LinearLayout
         android:id="@+id/btnGoogle"
-        android:layout_width="380dp"
-        android:layout_height="48dp"
-        android:layout_alignRight="@id/btnSignUp"
+        android:layout_width="@dimen/size_width380dp"
+        android:layout_height="@dimen/size_height48dp"
+        android:layout_alignEnd="@id/btnSignUp"
         android:layout_marginTop="60dp"
         android:background="@drawable/customgoogleandface"
         android:gravity="center_vertical"
@@ -177,7 +177,7 @@
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
-            android:text="Log in with Google"
+            android:text="@string/log_in_with_google"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="16sp" />
@@ -191,10 +191,10 @@
 
     <LinearLayout
         android:id="@+id/btnFacebook"
-        android:layout_width="380dp"
-        android:layout_height="48dp"
+        android:layout_width="@dimen/size_width380dp"
+        android:layout_height="@dimen/size_height48dp"
         android:layout_marginTop="10dp"
-        android:layout_alignRight="@id/btnSignUp"
+        android:layout_alignEnd="@id/btnSignUp"
         android:background="@drawable/customgoogleandface"
         android:gravity="center_vertical"
         android:orientation="horizontal"
@@ -210,7 +210,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
-            android:text="Log in with Facebook"
+            android:text="@string/log_in_with_facebook"
             android:textColor="#000000"
             android:textSize="16sp"
             android:gravity="center"
