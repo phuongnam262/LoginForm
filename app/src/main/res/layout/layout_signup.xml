@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Signup_Activity">
+    tools:context=".SignupActivity">
 
     <TextView
         android:id="@+id/textCreate"
@@ -250,7 +250,7 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?attr/selectableItemBackground"
-            android:onClick="OnSignInClick"
+            android:onClick="onSignInClick"
             android:text="Sign in"
             android:textColor="#4285F4"
             android:textSize="14sp"
