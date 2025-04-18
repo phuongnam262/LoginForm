@@ -5,16 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
+    tools:context=".SignupActivity">
 
     <TextView
-        android:id="@+id/textLogin"
-        android:layout_width="0dp"
+        android:id="@+id/textCreate"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Log in"
-        android:textAlignment="center"
+        android:layout_alignEnd="@id/btnSignUp"
+        android:layout_marginStart="15dp"
+        android:text="@string/create_account"
         android:textColor="#000000"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -24,10 +23,38 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/name"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:paddingBottom="4dp"
+        android:textColorHint="#767474"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCreate" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A0A0A0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <EditText
         android:id="@+id/textEmail"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/size_height48dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="sans-serif"
@@ -41,22 +68,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
 
     <View
-        android:layout_width="@dimen/size_width380dp"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#A0A0A0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
+
     <EditText
         android:id="@+id/textPass"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/size_height48dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="sans-serif"
@@ -73,8 +100,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
     <View
-        android:id="@+id/view"
-        android:layout_width="@dimen/size_width380dp"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#A0A0A0"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,55 +108,68 @@
         app:layout_constraintTop_toBottomOf="@+id/textPass" />
 
 
-    <TextView
-        android:id="@+id/textForgot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+    <EditText
+        android:id="@+id/textConfirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="sans-serif-medium"
-        android:paddingTop="4dp"
-        android:text="Forgot password?"
-        android:textColor="#4285F4"
-        android:textSize="14sp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingBottom="4dp"
+        android:textColorHint="#767474"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.003"
-        app:layout_constraintStart_toStartOf="@+id/textPass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPass" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A0A0A0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConfirmPass" />
+
+
     <Button
-        android:id="@+id/btnLogIn"
-        android:layout_width="@dimen/size_width380dp"
+        android:id="@+id/btnSignUp"
+        android:layout_width="200dp"
         android:layout_height="@dimen/size_height48dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/custom_login_signup"
-        android:text="Log in"
+        android:text="@string/sign_up"
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPass" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textConfirmPass" />
 
     <LinearLayout
         android:id="@+id/btnGoogle"
         android:layout_width="@dimen/size_width380dp"
-        android:layout_height="@dimen/size_height48dp"
-        android:layout_alignEnd="@id/btnLogIn"
-        android:layout_marginTop="90dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@id/btnSignUp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/customgoogleandface"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.782"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogIn">
+        app:layout_constraintTop_toBottomOf="@+id/textConfirmPass">
+
 
         <TextView
             android:layout_width="0dp"
@@ -153,16 +192,18 @@
     <LinearLayout
         android:id="@+id/btnFacebook"
         android:layout_width="@dimen/size_width380dp"
-        android:layout_height="@dimen/size_height48dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@id/btnSignUp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/customgoogleandface"
         android:gravity="center_vertical"
-        android:layout_alignEnd="@id/btnLogIn"
         android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.782"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGoogle">
 
@@ -171,11 +212,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/log_in_with_facebook"
-            android:textColor="#000000"
-            android:textSize="16sp"
             android:gravity="center"
-            android:textAlignment="center"/>
+            android:text="@string/log_in_with_facebook"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
         <ImageView
             android:layout_width="24dp"
@@ -187,36 +228,42 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="570dp"
         android:layout_marginBottom="5dp"
         android:orientation="horizontal"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFacebook">
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Not a member? "
+            android:gravity="center"
+            android:text="Already a member? "
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/tvJoinNow"
+            android:id="@+id/tvSignIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?attr/selectableItemBackground"
-            android:onClick="onJoinNowClick"
-            android:text="Join Now"
+            android:onClick="onSignInClick"
+            android:text="Sign in"
             android:textColor="#4285F4"
             android:textSize="14sp"
             android:textStyle="bold"
             android:tooltipText="Click to join now" />
     </LinearLayout>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
