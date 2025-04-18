@@ -25,7 +25,7 @@
     <EditText
         android:id="@+id/textEmail"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/size_height48dp"
         android:layout_marginTop="20dp"
         android:background="@android:color/transparent"
         android:ems="10"
@@ -54,7 +54,7 @@
     <EditText
         android:id="@+id/textPass"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/size_height48dp"
         android:layout_marginTop="20dp"
         android:background="@android:color/transparent"
         android:ems="10"
@@ -97,11 +97,13 @@
         app:layout_constraintStart_toStartOf="@+id/textPass"
         app:layout_constraintTop_toBottomOf="@+id/textPass" />
 
+
     <Button
         android:id="@+id/btnLogIn"
         android:layout_width="300dp"
         android:layout_height="@dimen/size_height48dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/custom_login_signup"
         android:text="Log in"
         android:textAllCaps="false"
@@ -110,26 +112,24 @@
         android:textStyle="bold"
         app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGoogle"
         app:layout_constraintTop_toBottomOf="@+id/textPass" />
-
 
     <LinearLayout
         android:id="@+id/btnGoogle"
         android:layout_width="300dp"
         android:layout_height="@dimen/size_height48dp"
         android:layout_alignEnd="@id/btnLogIn"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/customgoogleandface"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogIn">
+        app:layout_constraintTop_toBottomOf="@+id/textPass">
 
         <TextView
             android:layout_width="0dp"
@@ -154,14 +154,14 @@
         android:layout_width="300dp"
         android:layout_height="@dimen/size_height48dp"
         android:layout_alignEnd="@id/btnLogIn"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/customgoogleandface"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGoogle">
 
@@ -187,13 +187,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFacebook">
+        app:layout_constraintStart_toEndOf="@+id/btnFacebook"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogIn">
 
         <TextView
             android:layout_width="wrap_content"
