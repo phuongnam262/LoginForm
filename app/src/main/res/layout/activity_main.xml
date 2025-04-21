@@ -8,14 +8,28 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn_send_notification"
+        android:id="@+id/btn_send_notification1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send notification"
+        android:layout_marginBottom="72dp"
+        android:text="Send notification1"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btn_send_notification2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_send_notification2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="316dp"
+        android:text="Send notification2"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
